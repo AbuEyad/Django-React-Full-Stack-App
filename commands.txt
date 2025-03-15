@@ -1,0 +1,14 @@
+project link : https://github.com/techwithtim/Django-React-Full-Stack-App.git
+
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+django-admin startproject backend
+
+cd backend
+python manage.py startapp api
+
+cd ..
+npm create vite@latest frontend -- --template react
+npm install axios react-router-dom jwt-decode
